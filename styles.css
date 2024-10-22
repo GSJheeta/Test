@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(201, 201, 201);
+    font-family: Arial;
+}
+.centered-text{
+    text-align: center;
+}
+.left-text{
+    text-align: left;
+    margin-left: 13%;
+}
+.right-text{
+    text-align: right;
+    margin-right: 14%;
+}
+.resize-gif{
+    width: 50%;
+    height: auto;
+    display: block;
+}
+.resize-contact-gif{
+    width: 55%;
+    height: auto;
+    display: block;
+    margin-top: 40px;
+}
+.picture-home{
+    width: 17%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.kleine-picture{
+    width: 65%;
+    height: auto;
+    display: block;
+   margin-left: auto;
+    margin-right: auto;
+}
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+a:link{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    color: rgba(255, 0, 0, 0.573);
+    background-color: transparent;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.left-half {
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.right-picture {
+    float: right;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.right-half {
+    float: right;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.left-picture {
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+  footer p {
+    margin: 0;
+}
+input[type=text] {
+    width: 20%;
+    padding: 6px;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 3px solid rgba(255, 0, 0, 0.573);
+}
+input[type=submit]{
+    background-color: rgba(255, 0, 0, 0.573);
+    border: none;
+    color: white;
+    padding: 6px;
+    text-decoration: none;
+    margin-left: 6px;
+    cursor: pointer;
+}
+@media (orientation : landscape){
+    .grid-container{
+    grid-template-columns: 50% 50%;
+    }
+}
